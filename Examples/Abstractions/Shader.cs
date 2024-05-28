@@ -15,7 +15,7 @@ public readonly record struct Shader : IDisposable
         _gl = gl;
     }
 
-    public ShaderHandle ShaderHandle()
+    public ShaderHandle GetShaderHandle()
     {
         return _shaderHandle;
     }
@@ -58,7 +58,7 @@ public static class ShaderExtensions
         gl.Uniform1(location, value);
     }
     
-    public static uint LoadShader(GL gl, ShaderType type, string path)
+    public static ShaderHandle LoadShader(GL gl, ShaderType type, string path)
     {
         //To load a single shader we need to:
         //1) Load the shader from a file.
@@ -77,6 +77,6 @@ public static class ShaderExtensions
             throw new Exception($"Error compiling shader of type {type}, failed with error {infoLog}");
         }
 
-        return handle;
+        return new ShaderHandle(handle);
     }
 }
