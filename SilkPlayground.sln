@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilkPlayground", "SilkPlayground.csproj", "{7920459B-A56B-402F-BC62-13512E7E5E40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7920459B-A56B-402F-BC62-13512E7E5E40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7920459B-A56B-402F-BC62-13512E7E5E40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7920459B-A56B-402F-BC62-13512E7E5E40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7920459B-A56B-402F-BC62-13512E7E5E40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>Nullable</WarningsAsErrors>
+        <ServerGarbageCollection>true</ServerGarbageCollection>
+        <GarbageCollectionAdapatationMode>1</GarbageCollectionAdapatationMode>
+        <TrimMode>full</TrimMode>
+        <PublishTrimmed>true</PublishTrimmed>
+        <SilkEnableStaticLinking>true</SilkEnableStaticLinking>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks> <!-- maybe optional? -->
+    </PropertyGroup>
+    
+    <ItemGroup>
+<!--      <PackageReference Include="LanguageExt.CodeGen" Version="4.4.8" />-->
+      <PackageReference Include="CommunityToolkit.HighPerformance" Version="8.2.2" />
+      <PackageReference Include="Faster.Map" Version="5.0.4" />
+      <PackageReference Include="LanguageExt.Core" Version="4.4.8" />
+      <PackageReference Include="LanguageExt.Transformers" Version="4.4.8" />
+      <PackageReference Include="Silk.NET.Core" Version="2.21.0" />
+      <PackageReference Include="Silk.NET.Input" Version="2.21.0" />
+      <PackageReference Include="Silk.NET.Maths" Version="2.21.0" />
+      <PackageReference Include="Silk.NET.OpenAL" Version="2.21.0" />
+      <PackageReference Include="Silk.NET.OpenGL" Version="2.21.0" />
+      <PackageReference Include="Silk.NET.Windowing" Version="2.21.0" />
+      <PackageReference Include="SimdLinq" Version="1.3.2" />
+      <PackageReference Include="StbImageSharp" Version="2.27.14" />
+    </ItemGroup>
+
+<!--  enable SimdLinq across the project  -->
+    <ItemGroup>
+        <Using Include="SimdLinq" /> 
+    </ItemGroup>
+
+</Project>
