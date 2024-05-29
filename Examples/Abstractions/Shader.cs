@@ -12,7 +12,7 @@ public readonly record struct Shader : IDisposable
     public Shader(ref readonly ShaderHandle shaderHandle, GL gl)
     {
         _shaderHandle = shaderHandle;
-        _gl = gl;
+        _gl = gl ?? throw new ArgumentNullException(nameof(gl));
     }
 
     public ShaderHandle GetShaderHandle()

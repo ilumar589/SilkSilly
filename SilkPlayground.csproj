@@ -34,5 +34,8 @@
     <ItemGroup>
         <Using Include="SimdLinq" /> 
     </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Assets\Textures\" />
+    </ItemGroup>
 
 </Project>
